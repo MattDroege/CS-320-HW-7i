@@ -9,23 +9,53 @@ export const Stuff = new Mongo.Collection('Stuff');
  * Create the schema for Stuff
  */
 export const StuffSchema = new SimpleSchema({
-  name: {
-    label: 'Name',
+  first: {
+    label: 'first',
     type: String,
     optional: false,
     max: 20,
     autoform: {
       group: 'Stuff',
-      placeholder: 'Bicycle',
+      placeholder: 'John',
     },
   },
-  quantity: {
-    label: 'Quantity',
+  last: {
+    label: 'last',
+    type: String,
+    optional: false,
+    max: 20,
+    autoform: {
+      group: 'Stuff',
+      placeholder: 'Doe',
+    },
+  },
+  address: {
+    label: 'address',
+    type: String,
+    optional: false,
+    max: 20,
+    autoform: {
+      group: 'Stuff',
+      placeholder: 'WSU Vancouver',
+    },
+  },
+  phone: {
+    label: 'phone',
     type: Number,
     optional: false,
     autoform: {
       group: 'Stuff',
-      placeholder: '3',
+      placeholder: '555-555-5555',
+    },
+  },
+  email: {
+    label: 'email',
+    type: String,
+    optional: false,
+    max: 20,
+    autoform: {
+      group: 'Stuff',
+      placeholder: 'johndoe@wsu.edu',
     },
   },
 });
