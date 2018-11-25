@@ -52,7 +52,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'email',
     type: String,
     optional: false,
-    max: 20,
+    max: 30,
     autoform: {
       group: 'Stuff',
       placeholder: 'johndoe@wsu.edu',
